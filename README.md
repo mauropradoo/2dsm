@@ -8,5 +8,5 @@ Repositório criado para postagem de tarefas executadas durante o segundo semest
   <a href="https://github.com/mauropradoo/2dsm/tree/master/EngenhariaDeSoftwareII"><li>Engenharia de Software II 🗂️ </li></a>
   <a href="https://github.com/mauropradoo/2dsm/tree/master/EstruturaDeDados"><li>Estrutura de Dados 🖥️</li></a>
   <a href="https://github.com/mauropradoo/2dsm/tree/master/MatematicaParaComputacao"><li>Matemática para Computação 🗒️</li></a>
-  <a href="https://github.com/mauropradoo/2dsm/tree/master/Tecnicas%20de%20Programação"><li>Técnicas de Programação 🖱️</li></a>
+  <a href="https://github.com/mauropradoo/2dsm/tree/master/TecnicasdeProgramação"><li>Técnicas de Programação 🖱️</li></a>
 </ul>
