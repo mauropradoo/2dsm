@@ -1,0 +1,14 @@
+Comandos TS Server
+
+- npm init -y
+- npm i express
+- npm i -D @types/express
+- npm i -D ts-node ts-node-dev typescript
+- tsc --init
+
+
+- criar .gitignore -> node_modules
+- criar pasta src (source)
+- colocar os seguintes sripts no package.json:
+	"start": "ts-node ./src" - starta o server;
+    	"dev": "ts-node-dev ./src"- starta o server, mas a cada save, ele upa automaticamente

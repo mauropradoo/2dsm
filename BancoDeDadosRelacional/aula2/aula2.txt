@@ -1,0 +1,38 @@
+Banco de Dados Relacional - 20.02.24
+
+1 - CREATE DATABASE bd_sistema_bancario;
+	\c bd_sistema_bancario;
+
+2 - CREATE TABLE notebook (processador text);
+    CREATE TABLE celular (memoria text, camera text);
+    CREATE TABLE capacete (marca text, tamanho text);
+    CREATE TABLE mouse (marca text, dpimaximo text);
+    CREATE TABLE monitor (marca text, frequencia text);
+
+3 - CREATE TABLE cliente (nome_cliente text, cidade_cliente text,endereco_cliente text);
+    CREATE TABLE conta (numero_conta integer, nome_agencia text, saldo integer);
+    CREATE TABLE emprestimo (numero_emprestimo integer, nome_agencia text, valor integer);
+    CREATE TABLE agencia (nome_agencia text, cidade_agencia text, depositos text);
+
+4 - DROP TABLE notebook;
+    DROP TABLE celular;
+    DROP TABLE capacete;
+    DROP TABLE mouse;
+    DROP TABLE monitor;
+
+5 - ALTER TABLE cliente RENAME TO tbl_cliente;
+    ALTER TABLE tbl_cliente ADD COLUMN idade integer;
+    ALTER TABLE tbl_cliente ADD COLUMN cpf integer;
+
+    ALTER TABLE conta RENAME TO tbl_conta;
+
+    ALTER TABLE emprestimo RENAME TO tbl_emprestimo;
+    
+    ALTER TABLE agencia RENAME TO tbl_agencia;
+
+6 - CREATE SCHEMA mauro;
+    SHOW SEARCH_PATH;
+    SET SEARCH_PATH=mauro;
+    \dn
+
+\q

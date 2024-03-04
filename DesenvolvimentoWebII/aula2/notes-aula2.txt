@@ -1,0 +1,5 @@
+23.02.2024
+
+Nesta aula aprendemos sobre rotas, sendo formadas por URL's através do HTTP. Trabalhamos com Req, Res, DotEnv e algumas importações.
+Também nos foi apresentado a extensão do VS Code "Thunder Client", trazendo para dentro da IDE a visão de cliente 
+ 

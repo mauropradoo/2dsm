@@ -1,0 +1,12 @@
+1 - CREATE DATABASE bd_aula03;
+	\c bd_aula03;
+
+2 - CREATE TABLE tbl_cliente (codigo_cliente integer primary key, nome text not null, cidade text, endereco text);
+    CREATE TABLE tbl_titulo (codigo_titulo integer primary key, titulo text not null, descricao text, categoria text);
+    CREATE TABLE tbl_emprestimo (numero_emprestimo integer primary key, codigo_cliente text, codigo_livro text);
+    CREATE TABLE tbl_livros (cod_livro integer primary key, codigo_titulo text, status text);
+
+3 - Create domain chk_status text check (value in ('DISPONIVEL','ALUGADO'));
+    Create domain chk_categoria text check (value in ('DRAMA','COMEDIA'));
+
+4 - 
