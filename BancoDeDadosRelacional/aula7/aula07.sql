@@ -38,14 +38,14 @@ select sum(e.quantidade) from tbl_estoque as e join tbl_peca as p on e.cod_peca 
 select avg(preco) from tbl_peca where cod_peca = 3; --continuar
 
 --7 lista o valor da pecas mais cara e a mais barata.
-
+select max(preco), min(preco) from tbl_peca;
 
 --8 listar a quantidade de peças cadastradas
-
+select count(cod_peca) from tbl_peca;
 
 --9 listar a quantidade de cidades diferentes onde existem peças cadastradas
-
+select count(distinct cidade) from tbl_peca;
 
 --10 listar a media dos precos de todas as peças, com somente 1 digito após a virgula.
-
+select round (avg(preco),1) from tbl_peca;
 
