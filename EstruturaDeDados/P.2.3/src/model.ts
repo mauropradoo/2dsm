@@ -1,16 +1,19 @@
-export class Fatorial {
-    private cache: { [key: number]: number } = {};
+class Factorial {
+    private cache: Record<number, number> = {}; // Dicionário para armazenar os resultados intermediários
 
-    factorial(n: number): number {
+    recursiveFactorial(n: number): number {
         if (n in this.cache) {
+            // Se o resultado já estiver no cache, retorna-o diretamente
             return this.cache[n];
-        }
-        if (n === 0) {
+        } else if (n === 0 || n === 1) {
+            // Caso base: fatorial de 0 ou 1 é 1
             return 1;
         } else {
-            const result = n * this.factorial(n - 1);
+            // Calcula o fatorial recursivamente e armazena no cache
+            const result = n * this.recursiveFactorial(n - 1);
             this.cache[n] = result;
             return result;
         }
     }
 }
+ export default Factorial;
